@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 
-const ws = new WebSocket('ws://localhost:3000');
+const ws = new WebSocket('ws://196.188.187.88:3333');
 
 const client = new WebSocket.Server({ server });
 
@@ -37,6 +37,6 @@ ws.on('message', function incoming(data) {
     console.log(`onpremises received: ${data.message}`);
     ALLCLIENTS.forEach(preWs => preWs.send(data))
 });
-server.listen(3001, () => {
-    console.log('Server listening on port 3001');
+server.listen(3000, () => {
+    console.log('Server listening on port 3000');
 });
