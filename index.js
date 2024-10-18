@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 
-const ws = new WebSocket('ws://196.188.187.88:3333');
+const ws = new WebSocket('ws://196.188.187.88:3344');
 
 const client = new WebSocket.Server({ server });
 
