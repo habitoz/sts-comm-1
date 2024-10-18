@@ -30,7 +30,7 @@ client.on('connection', (cws) => {
 
 ws.on('open', function open() {
     console.log('Connected to main-server');
-    ws.send(JSON.stringify({ event: "ping", message: 'Hello from premises' }));
+    ws.send(JSON.stringify({ event: "ping", message: 'Onpremises app connected' }));
 });
 
 ws.on('message', function incoming(data) {
